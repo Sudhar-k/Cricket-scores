@@ -5,14 +5,14 @@ match_List = ""
 toss_winner = ""
 winner_team = ""
 status = ""
-number = "+91"+"9790726006"
+number = "+91"+"" //enter WA number
 time = int(input("Enter the hour in 24 formate"))
 mins = int(input("Enter the current Min")) + 1
 for i in response.json()['matches']:
     if i["matchStarted"] == True:
         if i["squad"] == True:
-            ##toss_winner = i["toss_winner_team"]
             winner_team = i["winner_team"]
+            ##toss_winner = i["toss_winner_team"]
         else:
             winner_team = "Match under process"
             toss_winner = "Toss under process"
